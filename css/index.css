@@ -1,0 +1,81 @@
+/* part Global */
+/*Section principale*/
+/* partie du haut apres la navbar, avec la part. evenement et le premier article */
+
+.partOne{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+.mainArticle{
+    width: 63%;
+    text-align: justify;
+}
+.mainArticle img {
+    width: 100%;
+}
+.evenement{
+    border: solid 1px #5798B2;
+}
+
+.event{
+    display: flex;
+    flex-direction: row;
+    padding: 0 3%;
+}
+
+.evenement .intertitre{
+    text-align: center;
+}
+
+.date{
+    width: 30%;
+}
+
+hr{
+    border-bottom: solid 1px #5798B2;
+    width: 90%;
+}
+
+button{
+    height: 4%;
+    width: 50%;
+    border-radius: 0%;
+    padding: 5% 1%;
+}
+
+/*deuxième section*/
+.sideArticle { 
+    display: flex;
+    gap: 4%;
+    margin: 3% 0%;
+}
+
+.sideArticle img{
+    width: 40%;
+}
+
+@media (max-width : 738px) {
+    .partOne {
+        flex-direction: column;
+    }
+    .mainArticle{
+        width: 100%;
+    }
+    .sideArticle { 
+        flex-direction: column;
+        margin-top: 7%;
+    }
+    .sideArticle img{
+        width: 100%;
+    }
+    .evenement{
+        margin-top: 7%;
+    }
+    .date{
+        margin-left: 3%;
+    }
+    .event .textearticle{
+        margin-top: 3%;
+    }
+}
